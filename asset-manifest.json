@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/sonya-react/static/css/main.77201570.css",
+    "main.js": "/sonya-react/static/js/main.aeb6d2c4.js",
+    "static/media/about__mainimg.png": "/sonya-react/static/media/about__mainimg.7830db263c71c9591f36.png",
+    "static/media/Фото на главной (1).png": "/sonya-react/static/media/Фото на главной (1).f13cc59367c981d31fbf.png",
+    "static/media/case1.png": "/sonya-react/static/media/case1.2b6cdcf40af236d4d65d.png",
+    "static/media/case3.png": "/sonya-react/static/media/case3.78f2dd8f70d34c44849f.png",
+    "static/media/case2.png": "/sonya-react/static/media/case2.ede5552ccd6c4ce67382.png",
+    "static/media/ылшдды.svg": "/sonya-react/static/media/ылшдды.bd36e772edf0cfb38f2d2f15603b242b.svg",
+    "static/media/star.svg": "/sonya-react/static/media/star.a833bcf46b44d940aeaee5a4fb5de8cc.svg",
+    "static/media/web.svg": "/sonya-react/static/media/web.6c74b6ed53911b406bbf9570e398a30f.svg",
+    "static/media/ig.svg": "/sonya-react/static/media/ig.74d22dd71018894e5e25e285df21eacd.svg",
+    "static/media/phone.svg": "/sonya-react/static/media/phone.66a3a4352f7126d8533616464762c06b.svg",
+    "static/media/cart.svg": "/sonya-react/static/media/cart.df890cc6de95ea60a2b86d7bb097db25.svg",
+    "static/media/man.svg": "/sonya-react/static/media/man.9cbd10a0c8d49cef3cae7d66b7939ab3.svg",
+    "static/media/tg.svg": "/sonya-react/static/media/tg.db8f7d34b61911c5c7853de730b5289f.svg",
+    "static/media/boops.svg": "/sonya-react/static/media/boops.3f98b33dafb87c5285be1d581000846e.svg",
+    "static/media/Логотип (1).svg": "/sonya-react/static/media/Логотип (1).f6254705139a273882c4ca415c926b17.svg",
+    "index.html": "/sonya-react/index.html",
+    "static/media/фонподфотонаглавной.svg": "/sonya-react/static/media/фонподфотонаглавной.8145455279809fe62ed4d060178620fb.svg",
+    "static/media/кружок3.svg": "/sonya-react/static/media/кружок3.b7d9d251ccc241edd9d66bacdf46a972.svg",
+    "main.77201570.css.map": "/sonya-react/static/css/main.77201570.css.map",
+    "main.aeb6d2c4.js.map": "/sonya-react/static/js/main.aeb6d2c4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77201570.css",
+    "static/js/main.aeb6d2c4.js"
+  ]
+}
