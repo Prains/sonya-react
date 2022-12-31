@@ -1,0 +1,16 @@
+@use "../../css/mixins/mixins.scss" as m;
+.header {
+  width: 90%;
+  margin: 39px auto 36px auto;
+  @include m.flex(center, space-between);
+  &__nav {
+    @include m.flex();
+    gap: 58px;
+    a {
+      text-decoration: none;
+    }
+    h4 {
+      color: #1e1e1e;
+    }
+  }
+}

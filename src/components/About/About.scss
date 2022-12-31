@@ -1,0 +1,83 @@
+@use "../../css/mixins/mixins.scss" as m;
+
+.about {
+  width: 100%;
+  @include m.flex(center, space-between);
+  margin: 0;
+  &__text-wrapper {
+    @include m.width(567px);
+    @include m.flex(start);
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  &__title {
+    @include m.font(48px, 50px, left, #624cd2);
+    font-weight: 600;
+    margin-bottom: 31px;
+  }
+  &__text {
+    @include m.font(15px, 18px, unset, #000);
+    margin-bottom: 20px;
+  }
+  .text__subtitle {
+    @include m.font(20px, 24px, left, #624cd2);
+    font-weight: 500;
+  }
+  .text__list {
+    list-style: none;
+    padding: 0;
+    .list__item {
+      @include m.flex();
+      @include m.font(15px, 18px, left, #000);
+      @include m.width(455px);
+      font-family: "Montserrat";
+      position: relative;
+      &:last-of-type {
+        margin-bottom: 54px;
+      }
+      .list__header {
+        @include m.font(96px, 70px, unset, rgba(111, 31, 191, 0.6));
+        font-weight: 500;
+        font-family: "Nunito";
+        &::after {
+          position: absolute;
+          left: 3px;
+          -webkit-text-stroke: 1px #6f1fbf80;
+          color: #fff;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  &__image-row {
+    margin-bottom: 69px;
+  }
+  &__link {
+    align-self: center;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(111, 31, 191, 0.6);
+    border-radius: 15px;
+    padding: 13px;
+    @include m.width(400px);
+    @include m.font(20px, 27px, center, #6f1fbf);
+    font-weight: 700;
+  }
+}
+
+.first {
+  &::after {
+    content: "1";
+  }
+}
+
+.second {
+  &::after {
+    content: "2";
+  }
+}
+
+.third {
+  &::after {
+    content: "3";
+  }
+}
