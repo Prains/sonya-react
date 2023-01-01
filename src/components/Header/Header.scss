@@ -3,14 +3,32 @@
   width: 90%;
   margin: 39px auto 36px auto;
   @include m.flex(center, space-between);
+  &__burger {
+    display: none;
+  }
   &__nav {
     @include m.flex();
     gap: 58px;
     a {
       text-decoration: none;
+      h4 {
+        color: #1e1e1e;
+      }
     }
-    h4 {
-      color: #1e1e1e;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    a {
+      display: none;
+    }
+  }
+  .header {
+    width: 91%;
+    margin: 15px auto 4px auto;
+    &__burger {
+      display: block;
     }
   }
 }

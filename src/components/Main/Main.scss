@@ -1,12 +1,10 @@
 @use "../../css/mixins/mixins.scss" as m;
 
-
 .main {
   width: 93%;
   margin: 0 auto;
   @include m.flex(start, space-between);
   flex-wrap: wrap;
-
   &__lead {
     margin-top: 85px;
     @include m.width(492px);
@@ -120,6 +118,113 @@
       position: absolute;
       right: -22px;
       top: 125px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main__lead__socials {
+    display: none !important;
+  }
+
+  .main {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    &__lead {
+      margin: 0;
+      &__lead {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 700;
+        position: absolute;
+        text-align: center;
+        bottom: 57px;
+        z-index: 99;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      &__link {
+        @include m.width(350px);
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        position: absolute;
+        bottom: -51px;
+        z-index: 99;
+      }
+      &__wrapper {
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        .main__lead__button {
+          align-self: start;
+          order: 2;
+          @include m.width(80px);
+          font-size: 8px;
+          line-height: 10px;
+          margin-top: -5px;
+        }
+        h2 {
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+    }
+    &__image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &__circle {
+        display: none;
+      }
+      &__rectangle {
+        display: none;
+      }
+      &__advantages {
+        margin-top: -25px;
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        &__advantage {
+          position: unset;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 14px;
+          padding: 0;
+          padding-top: 4px;
+          padding-bottom: 6px;
+          gap: 7px;
+          &:nth-of-type(1) {
+            @include m.width(130px);
+            order: -1;
+          }
+          &:nth-of-type(2) {
+            @include m.width(117px);
+            order: 3;
+          }
+          &:nth-of-type(3) {
+            @include m.width(164px);
+            order: 0;
+          }
+          &:nth-of-type(4) {
+            @include m.width(180px);
+            order: 4;
+          }
+          .advantage__icon {
+            max-width: 15px;
+            max-height: 15px;
+          }
+        }
+      }
+    }
+    &__mainimage {
+      margin-top: -55px;
+      max-width: 252px;
+      max-height: 320px;
     }
   }
 }

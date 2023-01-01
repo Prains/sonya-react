@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import '../Header/Header.scss'
 import { logo } from '../../utils/baseIcons'
-
+import burger from '../../images/burger.svg'
 const Header = () => {
     return (
         <header className="header">
@@ -19,7 +19,8 @@ const Header = () => {
                     <h4>Услуги</h4>
                 </Link>
             </nav>
-        </header >
+            <img src={burger} alt="" className="header__burger" />
+        </header>
 
     );
 }
