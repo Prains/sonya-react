@@ -1,4 +1,4 @@
-@use "../../css/mixins/mixins.scss" as m;
+@use "../../../css/mixins/mixins.scss" as m;
 
 .about {
   width: 100%;
@@ -79,5 +79,70 @@
 .third {
   &::after {
     content: "3";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    overflow: hidden;
+    position: relative;
+    width: 96%;
+    margin: 20px auto 0 auto;
+    &__text-wrapper {
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 50px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 14px;
+      @include m.width(207px);
+      align-self: start;
+      margin-left: 12px;
+    }
+
+    .text__subtitle {
+      font-size: 12px;
+      line-height: 15px;
+      align-self: start;
+      margin-left: 12px;
+      @include m.width(166px);
+    }
+
+    .text__list {
+      .list__item {
+        font-size: 12px;
+        line-height: 16px;
+        gap: 4px;
+        .list__header {
+          font-size: 50px;
+          line-height: 68px;
+        }
+        &:nth-of-type(1) {
+          @include m.width(172px);
+        }
+      }
+    }
+
+    &__mainimage {
+      max-width: 286px;
+      max-height: 269px;
+      position: absolute;
+      right: -69px;
+      top: -6px;
+    }
+    &__image-row {
+      max-width: 320px;
+    }
+    &__link {
+      max-width: 277px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 }

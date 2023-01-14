@@ -1,0 +1,31 @@
+@use "../../../css/mixins/mixins.scss" as m;
+
+.service {
+  @include m.width(292px);
+  margin: 24px auto 0 auto;
+  &__uppercontent {
+    @include m.flex();
+    gap: 10px;
+    h2 {
+      @include m.font(20px, 25px);
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #854aa0 0%, #edaba9 105%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__title-wrapper {
+    @include m.width(51px);
+    @include m.flex();
+    flex-direction: column;
+    gap: 5px;
+    .up {
+      @include m.font(40px, 48px);
+    }
+    .down {
+      @include m.font(12px, 14px);
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@use "../../../css/mixins/mixins.scss" as m;
+
+.projects {
+  margin: 30px auto 0 auto;
+  @include m.flex();
+  flex-direction: column;
+  &__uppersection {
+    width: 100%;
+    @include m.flex(center, space-between);
+    margin-bottom: 50px;
+    .uppersection__text-wrapper {
+      @include m.flex(end, center);
+      flex-direction: column;
+      gap: 26px;
+      .uppersection__title {
+        @include m.font(48px, 50px, right, #624dc2);
+      }
+      .uppersection__subtitle {
+        @include m.font(20px, 24px, right, #1e1e1e);
+      }
+    }
+  }
+  &__content {
+    @include m.flex();
+    @include m.width(1070px);
+    gap: 42px;
+    margin: 0 auto 62px auto;
+    .content__row {
+      @include m.flex();
+      gap: 72px;
+      flex-direction: column;
+      &__image {
+        position: relative;
+        width: 550px;
+        height: 200px;
+        background: no-repeat;
+      }
+    }
+    .content__image {
+      width: 474px;
+      height: 474px;
+      position: relative;
+    }
+  }
+  &__link {
+    @include m.width(353px);
+    @include m.font(20px, 24px, center, #624cd2);
+    text-decoration: none;
+    border: 1px solid #624cd2;
+    box-shadow: 0px 0px 10px rgba(111, 31, 191, 0.6);
+    border-radius: 15px;
+    padding: 13px;
+  }
+}
+.image__hover {
+  &::after {
+    content: "";
+    background: rgba(81, 81, 81, 0.2) url(../../../images/Лупа.svg) no-repeat center center;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    &::after {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .projects {
+    margin-top: 70px;
+    margin-bottom: 24px;
+    &__link {
+      @include m.width(227px);
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__uppersection {
+      .uppersection__boop {
+        display: none;
+      }
+
+      .uppersection__text-wrapper {
+        margin: 0 auto;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+
+        .uppersection__title {
+          font-size: 20px;
+          line-height: 50px;
+          margin-bottom: -12px;
+        }
+
+        .uppersection__subtitle {
+          font-size: 10px;
+          line-height: 12px;
+          text-align: center;
+        }
+      }
+    }
+    &__content {
+      gap: 11px;
+      .content__row {
+        gap: 21px;
+        &__image {
+          max-width: 149px;
+          max-height: 54px;
+        }
+      }
+    }
+    .content__image {
+      max-width: 128px;
+      max-height: 128px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import './About.scss'
 import { Link } from 'react-router-dom'
-import maingimg from '../../images/about__mainimg.png'
-import skills from '../../images/ылшдды.svg'
+import maingimg from '../../../images/about__mainimg.png'
+import skills from '../../../images/ылшдды.svg'
 const About = () => {
     return (
         <section className="about">
@@ -13,7 +13,7 @@ const About = () => {
                     <li className="list__item"><span className="list__header first">1</span>Мне ближе всего классический стиль построения сайта - понятный первый экран с кнопкой, удобное разделение на блоки. </li>
                     <li className="list__item"><span className="list__header second">2</span>Узнавать новые фишки в дизайне - мое хобби, постоянно применяю что-то новое в работах</li>
                     <li className="list__item"><span className="list__header third">3</span>Люблю делать сайты, основываясь на одном визуальном компоненте. Например, брать фиолетовый и обыгрывать его разными градиентами, как на этом сайте
-                </li>
+                    </li>
                 </ul>
                 <img src={skills} alt="" className="about__image-row" />
                 <Link to='/form' className='about__link'>СТОИМОСТЬ РАБОТ</Link>

@@ -18,8 +18,13 @@
   }
 }
 
+.header__socials {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .header__nav {
+    display: none;
     a {
       display: none;
     }
@@ -30,5 +35,12 @@
     &__burger {
       display: block;
     }
+    &__logo {
+      max-width: 68px;
+    }
+  }
+  .header__socials {
+    @include m.flex();
+    gap: 10px; 
   }
 }

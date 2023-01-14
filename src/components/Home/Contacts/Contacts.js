@@ -1,10 +1,12 @@
 import './Contacts.scss'
-import phone from '../../images/iphone.png'
-
+import phone from '../../../images/iphone.png'
+import { Link } from 'react-router-dom';
 const Contacts = () => {
     return (
         <section className="contacts">
-            <img src={phone} alt="" />
+            <Link to='/form'>
+                <img src={phone} alt="" className='contacts__mainimage' />
+            </Link>
             <div className='contacts__text-wrapper'>
                 <a href="/" className='contacts__link'>TELEGRAM</a>
                 <a href="/" className='contacts__link'>WHATSAPP</a>

@@ -1,4 +1,4 @@
-@use "../../css/mixins/mixins.scss" as m;
+@use "../../../css/mixins/mixins.scss" as m;
 
 .main {
   width: 93%;
@@ -153,6 +153,9 @@
         position: absolute;
         bottom: -51px;
         z-index: 99;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
       }
       &__wrapper {
         justify-content: center;
@@ -165,6 +168,7 @@
           font-size: 8px;
           line-height: 10px;
           margin-top: -5px;
+          margin-left: 30px;
         }
         h2 {
           font-size: 30px;

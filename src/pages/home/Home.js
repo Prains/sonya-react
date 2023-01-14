@@ -1,7 +1,7 @@
-import About from "../../components/About/About";
-import Contacts from "../../components/Contacts/Contacts";
-import Main from "../../components/Main/Main";
-import Projects from "../../components/Projects/Projects";
+import About from "../../components/Home/About/About";
+import Contacts from "../../components/Home/Contacts/Contacts";
+import Main from "../../components/Home/Main/Main";
+import Projects from "../../components/Home/Projects/Projects";
 
 const Home = () => {
     return (
